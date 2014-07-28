@@ -41,3 +41,7 @@ require "./lib/order"
 # p Order.sum("amount")
 
 # p Order.where(customer_id: 1).sum("amount")
+
+# p Order.average("amount")
+
+# p Order.average("amount").round(2)
