@@ -20,5 +20,6 @@ require "./lib/order"
 
 # p Customer.order("name asc")
 
-p Customer.order("name desc")
+# p Customer.order("name desc")
 
+p Item.all
