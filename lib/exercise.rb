@@ -35,3 +35,5 @@ require "./lib/order"
 # p Customer.select("name, email")
 
 # p Customer.select("id, name, address")
+
+p Customer.all.count
