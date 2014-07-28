@@ -22,4 +22,6 @@ require "./lib/order"
 
 # p Customer.order("name desc")
 
-p Item.all
+# p Item.all
+
+p Item.where("name like ? ", 'boot%')
