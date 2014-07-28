@@ -10,4 +10,6 @@ require "./lib/order"
 # Customer.first
 # Customer.find(1)
 
-p Customer.last
+# p Customer.last
+
+p Customer.find(3)
