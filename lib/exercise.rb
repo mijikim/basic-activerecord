@@ -12,4 +12,6 @@ require "./lib/order"
 
 # p Customer.last
 
-p Customer.find(3)
+# p Customer.find(3)
+
+p Customer.where(state: "Colorado")
