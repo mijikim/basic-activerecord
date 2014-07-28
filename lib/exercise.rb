@@ -52,5 +52,7 @@ require "./lib/order"
 
 # p Order.all.group("customer_id").minimum("amount")
 
-p Order.all.group("customer_id").maximum("amount")
+# p Order.all.group("customer_id").maximum("amount")
+
+p Customer.where(state: "Colorado", city: "Rigobertoside")
 
