@@ -36,4 +36,7 @@ require "./lib/order"
 
 # p Customer.select("id, name, address")
 
-p Customer.all.count
+# p Customer.all.count
+
+# p Order.sum("amount")
+
