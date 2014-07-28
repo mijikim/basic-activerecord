@@ -26,4 +26,6 @@ require "./lib/order"
 
 # p Item.where("name like ? ", 'boot%')
 
-p Order.all
+# p Order.all
+
+p Order.limit(5)
