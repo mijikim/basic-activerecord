@@ -18,4 +18,7 @@ require "./lib/order"
 
 # p Customer.limit(5)
 
-p Customer.order("name asc")
+# p Customer.order("name asc")
+
+p Customer.order("name desc")
+
