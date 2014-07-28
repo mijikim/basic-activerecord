@@ -45,3 +45,6 @@ require "./lib/order"
 # p Order.average("amount")
 
 # p Order.average("amount").round(2)
+
+# p Order.minimum("amount")
+
