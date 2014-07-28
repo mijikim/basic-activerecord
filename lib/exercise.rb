@@ -40,3 +40,4 @@ require "./lib/order"
 
 # p Order.sum("amount")
 
+# p Order.where(customer_id: 1).sum("amount")
