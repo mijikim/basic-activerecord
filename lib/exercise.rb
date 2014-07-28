@@ -58,4 +58,9 @@ require "./lib/order"
 
 # p Customer.where(:state => ["Ohio", "Virginia"])
 
-p Item.find_by(description: "snow board").update(name: "board1")
+# p Item.find_by(description: "snow board").update(name: "board1")
+
+# p Item.create(name: "kayak01", description: "one person river kayak")
+
+# p Item.find_by(name: "kayak01").destroy
+
