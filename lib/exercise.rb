@@ -24,4 +24,6 @@ require "./lib/order"
 
 # p Item.all
 
-p Item.where("name like ? ", 'boot%')
+# p Item.where("name like ? ", 'boot%')
+
+p Order.all
