@@ -79,3 +79,4 @@ require "awesome_print"
 
 # p Orderitem.select("orders.customer_id, item_id").joins("join orders on orderitems.order_id = orders.id").where(item_id: 8)
 
+p Item.select("customers.name").joins("join orderitems on items.id = orderitems.item_id").joins("join orders on orderitems.order_id = orders.id").joins("join customers on orders.customer_id = customers.id").where(name: "bike03")
