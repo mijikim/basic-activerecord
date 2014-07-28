@@ -54,5 +54,8 @@ require "./lib/order"
 
 # p Order.all.group("customer_id").maximum("amount")
 
-p Customer.where(state: "Colorado", city: "Rigobertoside")
+# p Customer.where(state: "Colorado", city: "Rigobertoside")
 
+# p Customer.where(:state => ["Ohio", "Virginia"])
+
+p Item.find_by(description: "snow board").update(name: "board1")
