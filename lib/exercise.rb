@@ -5,10 +5,10 @@ require "./lib/item"
 require "./lib/orderitem"
 require "./lib/order"
 
-# Customer.all
+# p Customer.all
 #
-# Customer.first
-# Customer.find(1)
+# p Customer.first
+# p Customer.find(1)
 
 # p Customer.last
 
@@ -17,3 +17,5 @@ require "./lib/order"
 # p Customer.where(state: "Colorado")
 
 # p Customer.limit(5)
+
+p Customer.order("name asc")
