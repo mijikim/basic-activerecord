@@ -80,3 +80,15 @@ require "awesome_print"
 # p Orderitem.select("orders.customer_id, item_id").joins("join orders on orderitems.order_id = orders.id").where(item_id: 8)
 
 p Item.select("customers.name").joins("join orderitems on items.id = orderitems.item_id").joins("join orders on orderitems.order_id = orders.id").joins("join customers on orders.customer_id = customers.id").where(name: "bike03")
+
+p Order.find_by_sql("select
+customers.name as customer_name,
+                  items.name as item_name,
+                                sum(amount) as total
+from
+orders
+inner join customers on orders.customer_id = customers.id
+inner join orderitems on orders.id = orderitems.id
+inner join items on orderitems.item_id = items.id
+where customers.name = 'Evert Pfeffer' and items.name = 'bike02'
+group by customer_name, item_name")
