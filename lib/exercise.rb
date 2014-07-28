@@ -50,3 +50,5 @@ require "./lib/order"
 
 # p Order.maximum("amount")
 
+# p Order.all.group("customer_id").minimum("amount")
+
