@@ -5,4 +5,8 @@ require "./lib/item"
 require "./lib/orderitem"
 require "./lib/order"
 
-p Customer.all
+# Customer.all
+#
+# Customer.first
+# Customer.find(1)
+
