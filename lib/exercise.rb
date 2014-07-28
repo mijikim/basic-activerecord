@@ -32,4 +32,6 @@ require "./lib/order"
 
 # p Order.order("id desc").limit(5)
 
-p Customer.select("name, email").to_sql
+# p Customer.select("name, email")
+
+# p Customer.select("id, name, address")
