@@ -75,6 +75,7 @@ require "awesome_print"
 
 # p Order.select("customer_id, customers.name, round(avg(amount), 2)").joins("join customers on orders.customer_id = customers.id").group("customer_id, customers.name").order("customers.name asc")
 
-p Order.select("items.name").joins("join orderitems on orders.id = orderitems.order_id").joins("join items on orderitems.item_id = items.id").where(customer_id: 2)
+# p Order.select("items.name").joins("join orderitems on orders.id = orderitems.order_id").joins("join items on orderitems.item_id = items.id").where(customer_id: 2)
 
+# p Orderitem.select("orders.customer_id, item_id").joins("join orders on orderitems.order_id = orders.id").where(item_id: 8)
 
