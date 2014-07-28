@@ -28,4 +28,6 @@ require "./lib/order"
 
 # p Order.all
 
-p Order.limit(5)
+# p Order.limit(5)
+
+p Order.order("id desc").limit(5)
