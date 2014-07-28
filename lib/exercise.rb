@@ -4,6 +4,7 @@ require "./lib/customer"
 require "./lib/item"
 require "./lib/orderitem"
 require "./lib/order"
+require "awesome_print"
 
 # p Customer.all
 #
@@ -63,4 +64,11 @@ require "./lib/order"
 # p Item.create(name: "kayak01", description: "one person river kayak")
 
 # p Item.find_by(name: "kayak01").destroy
+
+# p Order.select("customer_id, amount").group("customer_id").sum("amount")
+
+# p Order.select("orders.id, customers.name, amount").joins("join customers on orders.customer_id = customers.id")
+
+# p Order.select("customer_id, customers.name, amount").joins("join customers on orders.customer_id = customers.id").group("customer_id, customers.name").order("customers.name asc").sum("amount")
+
 
