@@ -48,3 +48,5 @@ require "./lib/order"
 
 # p Order.minimum("amount")
 
+# p Order.maximum("amount")
+
